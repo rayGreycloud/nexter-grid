@@ -10,7 +10,7 @@
   "scripts": {
     "start": "npm-run-all --parallel dev-server watch:sass",
     "build:css": "npm-run-all compile:sass prefix:css compress:css",
-    "dev-server": "live-server --browser=firefox",
+    "dev-server": "live-server --browser=chrome",
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
     "compile:sass": "node-sass sass/main.scss css/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" css/style.comp.css -o css/style.prefix.css",
