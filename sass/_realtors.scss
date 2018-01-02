@@ -36,6 +36,14 @@
     display: block;
   }
   
+  &__details {
+    margin-left: 2rem;
+    
+    @media only screen and (max-width: $bp-md) {
+      margin-left: 0;
+    }
+  }
+  
   &__sold {
     text-transform: uppercase;
     color: $color-grey-light-2;
